@@ -5,7 +5,7 @@
         <div class="number">1111</div>
         <div class="name">我的客户</div>
       </div>
-      <div>
+      <div @click="workOrder">
         <div class="number">1111</div>
         <div class="name">我的工单</div>
       </div>
@@ -41,19 +41,29 @@
     <div class="clientList">
       <div class="hearder">
         <div class="title">新客户</div>
-        <div><i class="cubeic-search"></i></div>
+        <div @click="indexSearch"><i class="cubeic-search"></i></div>
       </div>
-      <div></div>
+      <ListIndex></ListIndex>
     </div>
-    <div></div>
   </div>
 </template>
 <script>
+import ListIndex from "@components/home/list.vue";
+
 export default {
   data() {
     return {};
   },
-  methods: {},
+  components: { ListIndex },
+
+  methods: {
+    indexSearch() {
+
+    },
+    workOrder(){
+       this.$router.push('/workOrder')
+    }
+  },
 };
 </script>
 

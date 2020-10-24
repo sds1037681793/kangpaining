@@ -12,14 +12,18 @@ export default {
   name: "App",
   components: {},
   methods: {
-    showDialog() {
-      this.$createDialog({
-        type: "alert",
-        title: "Alert",
-        content: "dialog content",
-      }).show();
-      query();
-    },
+    // showDialog() {
+    //   this.$createDialog({
+    //     type: "alert",
+    //     title: "Alert",
+    //     content: "dialog content",
+    //   }).show();
+    // query()
+  },
+  mounted() {
+    query({data:'放入数据'}).then((result) => {
+      console.log("接口返回数据：" + result);
+    });
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <Home></Home>
-    <TabBar :selectedLabelDefault='selectedLabelDefault'></TabBar>
+    <TabBar :selectedLabelDefault="selectedLabelDefault"></TabBar>
   </div>
 </template>
 
@@ -14,16 +14,16 @@ export default {
   components: { TabBar, Home },
   data() {
     return {
-      selectedLabelDefault:1
+      selectedLabelDefault: 1,
     };
   },
-  methods: {
-    
+  methods: {},
+  mounted() {
+    document.title = "首页";
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>
