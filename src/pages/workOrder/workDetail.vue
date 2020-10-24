@@ -10,7 +10,18 @@
       <div><span>关联人员：</span>市场-无双，运营-无双，售后-一笑</div>
       <div><span>处理时长：</span></div>
     </div>
-    <div class="remark"></div>
+    <div class="remark">
+      <div class="content">111111</div>
+      <div class="imgList">
+          <img src="https://www.cnblogs.com/skins/coffee/images/bg_title.gif" />
+          <img src="https://www.cnblogs.com/skins/coffee/images/bg_title.gif" />
+          <img src="https://www.cnblogs.com/skins/coffee/images/bg_title.gif" />
+      </div>
+      <div class="bottomText">
+        <div><span>小记日期：</span></div>
+        <div><span>记录人：</span></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -43,22 +54,50 @@ export default {
       font-size: 12px;
     }
   }
-  .creatTime{
+  .creatTime {
     font-size: 12px;
     text-align: left;
     margin-top: 10px;
   }
-  .workContent{
+  .workContent {
     background-color: #f1f1f1;
     text-align: left;
     font-size: 12px;
-    padding: 10px;
+    padding: 4px 10px;
     margin-top: 10px;
-    >div{
+    > div {
       margin: 8px 0;
     }
-    span{
+    span {
       font-weight: bold;
+    }
+  }
+  .remark {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #e9e9e9;
+    margin-top: 10px;
+    text-align: left;
+    .bottomText {
+      font-size: 12px;
+      display: flex;
+      justify-content: start;
+      > div {
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+    .imgList{
+      overflow: hidden;
+      img{
+        width: 145px;
+        margin: 10px;
+        float: left;
+        display: block;
+      }
     }
   }
 }

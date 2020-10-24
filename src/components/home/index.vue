@@ -1,7 +1,7 @@
 <template>
   <div class="homePage">
     <div class="firstLine">
-      <div>
+      <div @click="myClient">
         <div class="number">1111</div>
         <div class="name">我的客户</div>
       </div>
@@ -62,6 +62,9 @@ export default {
     },
     workOrder(){
        this.$router.push('/workOrder')
+    },
+    myClient(){
+       this.$router.push('/myClient')
     }
   },
 };

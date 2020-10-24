@@ -15,11 +15,14 @@ var _workOrder = _interopRequireDefault(require("@pages/workOrder"));
 
 var _workDetail = _interopRequireDefault(require("@pages/workOrder/workDetail.vue"));
 
+var _myClient = _interopRequireDefault(require("@pages/workOrder/myClient.vue"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 //首页
 //我的工单
 //我的工单
+//我的客户
 _vue["default"].use(_vueRouter["default"]);
 
 var _default = new _vueRouter["default"]({
@@ -38,6 +41,11 @@ var _default = new _vueRouter["default"]({
     path: '/workDetail',
     name: '工单详情',
     component: _workDetail["default"]
+  }, {
+    //我的客户
+    path: '/myClient',
+    name: '我的客户',
+    component: _myClient["default"]
   }]
 });
 
