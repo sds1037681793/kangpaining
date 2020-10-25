@@ -8,7 +8,7 @@
         type="“text”"
         :clearable="true"
       ></cube-input>
-      <cube-button class="">搜索</cube-button>
+      <cube-button class="cube-button-small" :inline="true"> 搜索</cube-button>
     </div>
     <div class="tabClient">
       <cube-tab-bar v-model="selectedLabel" show-slider>
@@ -25,6 +25,7 @@
             <div class="leftText">
               <div>123123老百姓大药房</div>
               <div class="bottomText">
+                <span class="reason">个人原因</span>
                 <span>处理时长：23:34</span>
               </div>
             </div>
@@ -77,7 +78,7 @@ export default {
   },
   methods: {
     workDetail() {
-      this.$router.push("/workDetail");
+      this.$router.push("/clientDetails");
     },
   },
   mounted() {
@@ -99,6 +100,9 @@ export default {
     .cube-btn {
       flex: 1;
     }
+    .cube-input{
+      line-height: 1;
+    }
   }
   .tabClient {
     margin-top: 20px;
@@ -116,6 +120,10 @@ export default {
       .leftText {
         .bottomText {
           font-size: 10px;
+        }
+        .reason{
+          color: red;
+          margin-left: 0;
         }
         > div {
           margin: 6px 0;

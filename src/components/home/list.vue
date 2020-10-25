@@ -3,7 +3,7 @@
     <div class="leftText">
       <div>
         <div>王先生</div>
-        <div>洽谈中</div>
+        <span>洽谈中</span>
       </div>
       <div class="adree">
         <div><i class="cubeic-location"></i></div>
@@ -45,6 +45,10 @@ export default {
     display: flex;
     font-size: 14px;
     margin: 8px 0;
+  }
+  span{
+    margin-left: 10px;
+    color: blue;
   }
 }
 .rightIcon {

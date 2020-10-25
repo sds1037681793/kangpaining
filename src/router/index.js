@@ -4,7 +4,7 @@ import Index from '@pages/index'//首页
 import WorkOrder from '@pages/workOrder'//我的工单
 import WorkDetail from '@pages/workOrder/workDetail.vue'//我的工单
 import MyClient from '@pages/workOrder/myClient.vue'//我的客户
-
+import ClientDetails from '@pages/workOrder/ClientDetails.vue'//我的客户
 Vue.use(Router)
  
 export default new Router({
@@ -28,6 +28,11 @@ export default new Router({
       path: '/myClient',
       name: '我的客户',
       component: MyClient
+    },
+     {//客户详情
+      path: '/clientDetails',
+      name: '客户详情',
+      component: ClientDetails
     },
   ]
 })
